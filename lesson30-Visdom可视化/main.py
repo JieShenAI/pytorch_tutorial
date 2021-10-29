@@ -8,8 +8,8 @@ from visdom import Visdom
 
 batch_size=200
 learning_rate=0.01
-epochs=10
-
+# epochs=10 # 太慢了
+epochs=2
 train_loader = torch.utils.data.DataLoader(
     datasets.MNIST('../data', train=True, download=True,
                    transform=transforms.Compose([
